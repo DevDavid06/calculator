@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  <button onclick="alert(`${obj.fire}`)">click</button>
+  <button onclick="
+   let randomNumber = Math.random()
+   function game(){
+    
+   }
+    let result = ''
+    if(randomNumber >=  0 && randomNumber < 1 /2 ){
+      result = 'heads'
+    } else if( randomNumber >= 1 / 2  && randomNumber < 2/3){
+      result = 'tails'
+    }
+    let guess = ''
+    if( result === 'heads'){
+      guess = 'You win'
+    } else{
+      guess = 'You lose'
+    }
+    alert(`You picked heads, computer picked ${result}. ${guess} `)
+    ">Heads</button>
+  <button onclick="
+   let randomNumber1 = Math.random()
+    let result1 = ''
+    if(randomNumber1 < 0.){
+      result1 = 'heads'
+    } else{
+      result1 = 'tails'
+    }
+    let guess1 = ''
+    if( result1 === 'heads'){
+      guess1 = 'You lose'
+    } else{
+      guess1 = 'You win'
+    }
+    alert(`You picked tails, computer picked ${result1}. ${guess1} `)
+  ">Tails</button>
+  <script>
+
+    const hour = 13;
+    let name = 'Juwon'
+    if(hour >= 6 &&  hour <= 12){
+      console.log(`Good Morning! ${name}`);
+    } else if( hour >= 13 &&  hour <= 17){
+      console.log(`Good afternoon ${name}`)
+    } else{
+      console.log('Good night')
+
+    }
+    let age = 5;
+    const isHoliday = false;
+    if( (age <=6  || age >= 65) && !isHoliday) {
+      console.log('Discount available')
+    } else{
+      console.log('no discount')
+    }
+   let cont = 5 > 6 ? '5 is less than 6' : 'not less'
+   console.log(cont)
+
+
+   const obj = JSON.parse(localStorage.getItem('wooow'))
+    localStorage.setItem( ' wooow',JSON.stringify(obj))
+  </script>
+</body>
+</html>

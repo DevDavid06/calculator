@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>My practice of todo</title>
+</head>
+ <body>
+   <p>To do List</p>
+   <input onkeydown="whytt(event)" class="js-input" type="text" placeholder="addTodo">
+   <button onclick="addTodo()">Add</button>
+   <p class="debug"></p>
+   <script>
+    const arrays = ['make dinner ', ' Make monkey dance ']
+    renderTodoList()
+    function addTodo(){
+      const inputElement = document.querySelector('.js-input')
+      const name = inputElement.value
+      arrays.push(name)
+      
+      inputElement.value = ''
+      renderTodoList()
+    }
+    function renderTodoList(){
+      let toDoListHTML = ''
+      for(let i = 0; i < arrays.length; i++){
+        const addJoor =  arrays[i];
+        const html = 
+        `<p>
+          ${addJoor} 
+          <button onclick = "
+          todo
+          ">Delete</button>
+        </p>`
+        toDoListHTML += html;
+      }
+      document.querySelector('.debug').innerHTML = toDoListHTML;
+    }
+    function whytt(event){
+      if(event.key === 'Enter'){
+        addTodo()
+      }
+    }
+   </script>
+</body>
+</html>

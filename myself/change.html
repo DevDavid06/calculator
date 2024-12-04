@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    .clicks{
+      background: none;
+    }
+  </style>
+</head>
+<body id="clicks" class="clicks">
+  <button onclick="yoo()">black</button>
+
+  <script>
+    function yoo(){
+      let name = document.getElementById("clicks");
+      if (name.style.background === "none"){
+          name.style.background = "black";
+      } else {
+        name.style.background = "white"
+      }
+        
+    } 
+    
+    
+   
+  </script>
+</body>
+</html>
